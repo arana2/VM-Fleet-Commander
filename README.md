@@ -15,15 +15,15 @@ Contains parameters to deploy the Azure resources.
 A module is a Bicep file (or an Azure Resource Manager JSON template) that is deployed from another Bicep file.
 
 Bastion.bicep
-A managed service provided by Microsoft Azure that allows you to securely and seamlessly connect to your virtual machines (VMs) within a virtual network (VNet). It provides secure and seamless RDP (Remote Desktop Protocol) and SSH (Secure Shell) connectivity to your VMs directly through the Azure portal over SSL (port 443).
+<br>A managed service provided by Microsoft Azure that allows you to securely and seamlessly connect to your virtual machines (VMs) within a virtual network (VNet). It provides secure and seamless RDP (Remote Desktop Protocol) and SSH (Secure Shell) connectivity to your VMs directly through the Azure portal over SSL (port 443).
 Contains parameters to deploy the Bastion resource.
 
 vNET.bicep
-Contains parameters to deploy the Azure Virtual Network which includes the virtual network name, resource location, Subnet, and Bastion.
+<br>Contains parameters to deploy the Azure Virtual Network which includes the virtual network name, resource location, Subnet, and Bastion.
 
 vm.bicep
-Contains parameters to deploy the Azure Virtual Machine resources.
-This file contains the bulk of the resources, as each VM deployed requires a NIC, a dynamic private IP address from the VM subnet, access to a public IP address for Bastion, an OS image, and storage.
+<br>Contains parameters to deploy the Azure Virtual Machine resources.
+<br>This file contains the bulk of the resources, as each VM deployed requires a NIC, a dynamic private IP address from the VM subnet, access to a public IP address for Bastion, an OS image, and storage.
 
 # Resources Used
 I found Microsoft Learn to be an excellent resource for learning new concepts.
@@ -37,9 +37,9 @@ Here’s an article that helped me understand how to create multiple VM instance
 Helpful Tips:
 -	I recommend developing in Visual Studio Code. From my experience, it is lightweight, rich feature set, and support for various extensions.
 -	As for extensions, I used:
-o	Bicep – validates the code syntax and provide helpful suggestions.
-o	Powershell - write and debug PowerShell scripts within Visual Studio Code.
-o	Azure Resource Manager (ARM) Tools - The Azure Resource Manager (ARM) Tools for Visual Studio Code provides language support, resource snippets, and resource auto-completion to help you create and validate Azure Resource Manager templates.
+  <br>o	Bicep – validates the code syntax and provide helpful suggestions.
+  <br>o	Powershell - write and debug PowerShell scripts within Visual Studio Code.
+  <br>o	Azure Resource Manager (ARM) Tools - The Azure Resource Manager (ARM) Tools for Visual Studio Code provides language support, resource snippets, and resource auto-completion to help you create and validate Azure Resource Manager templates.
 -	GitHub is a great resource for backing up the Bicep files and version control. What’s great is Visual Studio Code has GitHub integrated into the software for easily backing up your code and accessing the repository anywhere.
 
 Steps:
@@ -74,9 +74,9 @@ This was a challenging and fulfilling project that involved deploying multiple A
 
 In terms of real-world applications, this solution can rapidly deploy environments for testing and development needs. Compared to an on-premises solution, the IaC approach offers several benefits:
 
-•	Scalability: Easily scale resources up or down based on demand, automating the provisioning of new instances.
-•	Cost Efficiency: Pay-as-you-go pricing models allow you to pay only for what you use, reducing wasted resources.
-•	Consistency and Repeatability: Use version-controlled scripts to ensure consistent and repeatable infrastructure setups across environments.
-•	Security: Leverage cloud providers' security features and best practices to ensure robust security measures.
+<br>•	Scalability: Easily scale resources up or down based on demand, automating the provisioning of new instances.
+<br>•	Cost Efficiency: Pay-as-you-go pricing models allow you to pay only for what you use, reducing wasted resources.
+<br>•	Consistency and Repeatability: Use version-controlled scripts to ensure consistent and repeatable infrastructure setups across environments.
+<br>•	Security: Leverage cloud providers' security features and best practices to ensure robust security measures.
 
 Considering these advantages, IaC provides a more flexible, efficient, and scalable approach compared to traditional on-premises solutions.
