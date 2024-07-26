@@ -25,14 +25,6 @@ vm.bicep
 <br>Contains parameters to deploy the Azure Virtual Machine resources.
 <br>This file contains the bulk of the resources, as each VM deployed requires a NIC, a dynamic private IP address from the VM subnet, access to a public IP address for Bastion, an OS image, and storage.
 
-# Resources Used
-I found Microsoft Learn to be an excellent resource for learning new concepts.
--	https://learn.microsoft.com/en-us/training/modules/create-composable-bicep-files-using-modules/
--	https://learn.microsoft.com/en-us/training/modules/arm-template-specs/
-
-Here’s an article that helped me understand how to create multiple VM instances.
--	https://blog.azinsider.net/deploy-multiple-resources-by-using-loops-in-azure-bicep-language-6aa4d60a4c2f
-
 # Deploying the Solution
 Helpful Tips:
 -	I recommend developing in Visual Studio Code. From my experience, it is lightweight, rich feature set, and support for various extensions.
@@ -80,3 +72,11 @@ In terms of real-world applications, this solution can rapidly deploy environmen
 <br>•	Security: Leverage cloud providers' security features and best practices to ensure robust security measures.
 
 Considering these advantages, IaC provides a more flexible, efficient, and scalable approach compared to traditional on-premises solutions.
+
+# Resources Used
+I found Microsoft Learn to be an excellent resource for learning new concepts.
+-	https://learn.microsoft.com/en-us/training/modules/create-composable-bicep-files-using-modules/
+-	https://learn.microsoft.com/en-us/training/modules/arm-template-specs/
+
+Here’s an article that helped me understand how to create multiple VM instances.
+-	https://blog.azinsider.net/deploy-multiple-resources-by-using-loops-in-azure-bicep-language-6aa4d60a4c2f
